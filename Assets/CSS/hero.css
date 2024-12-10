@@ -1,0 +1,293 @@
+/* css for hero section  */
+
+.hero {
+    background-color: #f7f7f7f7;
+
+    padding: 200px 100px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+.hero .hero-left {
+    width: 65%;
+    height: auto;
+    line-height: 70px;
+
+
+
+}
+
+.hero-left #sur-name {
+    color: rgb(255, 126, 5);
+}
+
+.hero .hero-right {
+
+    width: 35%;
+}
+
+
+
+.hero-right img {
+    width: 400px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+
+
+}
+
+
+/* css for typed element */
+
+.hero-left #element {
+    color: brown;
+}
+
+
+
+
+
+
+
+/* about btn */
+
+
+.about-btn {
+    background-color: rgb(37, 6, 173);
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgb(82, 99, 250);
+
+
+}
+
+.about-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.about-btn:hover {
+    background-color: rgb(26, 4, 126);
+
+}
+
+
+
+
+/* social links */
+
+.social-links {
+    font-size: 30px;
+
+
+}
+
+.social-links .border {
+    background-color: white;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+
+
+}
+
+.social-links .border:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+.social-links .linkedin {
+    color: rgb(2, 99, 194);
+}
+
+.social-links .github {
+    color: black;
+}
+
+.social-links .facebook {
+    color: rgb(7, 101, 255);
+}
+
+.social-links .youtube {
+    color: rgb(238, 1, 1);
+}
+
+
+
+
+
+/* mediaquery for hero section */
+
+@media(max-width:1150px) {
+
+
+
+    .hero-left #sur-name {
+        color: rgb(255, 126, 5);
+    }
+
+    .hero .hero-right {
+
+        width: 35%;
+    }
+
+
+
+    .hero-right img {
+        width: 360px;
+        border: 2px solid white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+
+
+    }
+
+
+
+
+
+
+}
+
+@media(max-width:1030px) {
+
+
+    .hero {
+        font-size: 23px;
+    }
+
+
+    .hero-right img {
+        width: 300px;
+        border: 2px solid white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+
+
+    }
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:950px) {
+
+
+    .hero {
+        font-size: 20px;
+    }
+
+
+    .hero-right img {
+        width: 280px;
+        border: 2px solid white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+
+
+    }
+
+
+
+
+
+
+}
+
+
+@media(max-width:850px) {
+
+
+    .hero {
+        font-size: 18px;
+    }
+
+
+    .hero-right img {
+        width: 260px;
+        border: 2px solid white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+
+
+    }
+
+
+    .hero .hero-left {
+
+        line-height: 65px;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media(max-width: 800px) {
+
+    .hero-left {
+        width: 100%;
+        line-height: 50px;
+    }
+
+    .hero-right img {
+        display: none !important;
+        /* Ensures it overrides other rules */
+    }
+
+
+    .hero {
+
+
+        padding: 200px 45px;
+        font-size: 18px;
+        display: block;
+
+        justify-content: space-between;
+
+    }
+
+    .hero .hero-left {
+
+        line-height: 60px;
+    }
+}
+
+
+
+
+
+@media(max-width: 705px) {
+    .hero-left {
+        width: 100%;
+    }
+
+    .hero {
+
+
+        padding: 200px 45px;
+    }
+
+}

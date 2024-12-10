@@ -1,0 +1,132 @@
+/* contact section */
+
+
+.contact {
+    background-color: rgb(229, 236, 251);
+    text-align: center;
+    padding: 20px;
+}
+
+
+.contact h1 {
+    font-size: 40px;
+}
+
+.contact span {
+    color: rgb(115, 3, 167);
+}
+
+
+.contact-img {
+    width: 600px;
+}
+
+.contact-wrap {
+    display: flex;
+    margin: 0px 100px;
+    padding: 20px 100px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.contact-form {
+    width: 100%;
+    padding: 0px 30px;
+}
+
+
+.input-container {
+
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    background-color: rgb(238, 241, 247);
+
+}
+
+.icon {
+    padding: 10px;
+
+    color: black;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 18px;
+    outline: none;
+    border: #cccccc;
+    font-weight: bold;
+    background-color: rgb(238, 241, 247);
+}
+
+.input-field:focus {
+    border: 2px solid rgb(115, 3, 175);
+}
+
+/* Set a style for the submit button */
+.submit-btn {
+    background-color: rgb(37, 6, 173);
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgb(82, 99, 250);
+
+
+}
+
+.submit-btn i {
+    margin-left: 16px;
+}
+
+.submit-btn:hover {
+    background-color: rgb(26, 4, 126);
+
+}
+
+
+/* mediaquery for contact form */
+
+@media(max-width:1130px) {
+
+    .contact-img {
+        display: none;
+
+    }
+
+
+    .contact-wrap {
+
+        padding: 20px 40px;
+
+    }
+
+
+
+    .contact-form {
+        width: 100%;
+        padding: 30px;
+    }
+
+
+    .input-container {
+
+        background-color: rgb(238, 241, 247);
+
+    }
+
+
+
+
+}

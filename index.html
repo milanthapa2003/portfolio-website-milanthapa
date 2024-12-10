@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <!-- link cdn for google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- link cdn for font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Assets/CSS/skills.css">
+    <link rel="stylesheet" href="Assets/CSS/about.css">
+    <link rel="stylesheet" href="Assets/CSS/contact.css">
+    <link rel="stylesheet" href="Assets/CSS/footer.css">
+    <link rel="stylesheet" href="Assets/CSS/hero.css">
+    <link rel="stylesheet" href="Assets/CSS/header.css">
+</head>
+
+<body>
+
+    <!-- navigation bar starts form here -->
+
+    <div class="header">
+
+        <div class="logo">
+            <a href="index.html">
+                <h2>Milan</h2>
+            </a>
+        </div>
+
+        <div class="navbar" id="navlink">
+
+            <!-- window close btn  -->
+            <i class="fa-solid fa-rectangle-xmark cross" onclick="hidemenue()"></i>
+
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Work</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- hamburger menue  -->
+        <i class="fa-solid fa-bars bar" onclick="showmenue()"></i>
+
+    </div>
+
+    <!-- navigation bar ends here -->
+
+
+    <!-- hero section starts from here  -->
+
+
+    <div class="hero">
+
+        <div class="hero-left">
+            <h1>Hello, It's Me</h1>
+            <h1> Milan <span id="sur-name">Thapa</span></h1>
+
+            <h3>and I'm a
+                <span id="element"></span> <!-- Element to contain animated typing -->
+            </h3>
+
+
+            <button class="about-btn"><a href="#about">About Me</a> <i
+                    class="fa-solid fa-arrow-circle-down down-arrow"></i></button>
+
+            <!-- social links -->
+
+            <div class="social-links">
+                <i class="fa-brands fa-linkedin-in border linkedin"></i>
+                <i class="fa-brands fa-github border github"></i>
+                <i class="fa-brands fa-facebook border facebook"></i>
+                <i class="fa-brands fa-youtube border youtube"></i>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="hero-right">
+
+
+            <img src="/Assets/Images/pp size photo bg removed.png" alt="milan-profile">
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- about me section starts here  -->
+
+
+
+    <div class="about" id="about">
+        <h1> <i class="fa-solid fa-user "></i>About <span>Me</span></h1>
+
+        <div class="about-wrap">
+
+
+            <div class="about-left">
+                <img src="Assets/Images/milan.jpg" alt="profile2">
+
+
+
+            </div>
+
+            <div class="about-right">
+
+                <h2>I'm Milan</h2>
+                <h2> <span>Full-Stack Developer</span></h2>
+                <p>I’m Milan Thapa, a full-stack developer from Kathmandu, Nepal, with a Bachelor’s in Computer Science
+                    and Information Technology from Tribhuvan University. I specialize in both front-end and back-end
+                    development and have a strong background in web and graphic design. Passionate about creating
+                    user-friendly experiences, I enjoy tackling complex challenges and continuously enhancing my skills.
+                    Outside of coding, I love exploring design trends and collaborating on new projects. I’m always open
+                    to connecting and sharing ideas!</p>
+
+                <button class="resume-btn">Resume<i class="fa-solid fa-chevron-right right-arrow"></i></button>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="skills-section" id="skills">
+        <h1><i class="fa-solid fa-laptop-code skills"></i>My <span>Skills</span></h1>
+        <div class="skills-grid" id="skills-grid">
+            <!-- Skills will be dynamically added here -->
+        </div>
+    </div>
+
+
+
+    <!-- contact section starts here  -->
+
+    <div class="contact">
+        <h1><i class="fa-solid fa-headset"></i> Get In <span>Touch</span></h1>
+        <div class="contact-wrap">
+
+
+            <div class="contact-img">
+                <img src="/Assets/Images/contact.png" alt="contact-image">
+
+            </div>
+
+
+
+            <div class="contact-form" id="contact">
+
+                <form action="/action_page.php">
+
+                    <div class="input-container">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="text" placeholder="Name" name="usrnm">
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="text" placeholder="Email" name="email">
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-phone icon"></i>
+                        <input class="input-field" type="text" placeholder="Phone Number" name="number">
+                    </div>
+
+
+
+                    <button type="submit" class="submit-btn">Submit <i class="fa fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer section starts here -->
+
+    <div class="footer-main">
+
+   
+
+    <div class="footer">
+
+        <div class="footer-left">
+
+            <h2>Milan's Portfolio</h2>
+            <p>Thank you for visiting my personal portfolio website. <br> Connect with me over socials.</p>
+            <p>Keep Rising 🚀.</p>
+
+        </div>
+
+        <div class="footer-middle">
+
+
+            <h2>Quick Links</h2>
+
+
+            <ul>
+                <li><a href="#" class="active"><i class="fas fa-chevron-circle-right right"></i>Home</a></li>
+                <li><a href="#about"><i class="fas fa-chevron-circle-right right"></i>About</a></li>
+                <li><a href="#skills"><i class="fas fa-chevron-circle-right right"></i>Skills</a></li>
+                <li><a href="#"><i class="fas fa-chevron-circle-right right"></i>Education</a></li>
+                <li><a href="#"><i class="fas fa-chevron-circle-right right"></i>Work</a></li>
+
+                <li><a href="#"><i class="fas fa-chevron-circle-right right"></i>Contact</a></li>
+            </ul>
+
+
+
+
+        </div>
+        <div class="footer-right">
+            <h2>Contact info</h2>
+
+            <p><i class="fas fa-phone icon"></i>+977 9762415657</p>
+            <p><i class="fas fa-envelope icon"></i>thapamilan9762@gmail.com</p>
+            <p><i class="fas fa-home icon"></i>Damti,Pyuthan</p>
+
+
+            <!-- social links -->
+
+            <div class="social-links footer-social-link">
+                <i class="fa-brands fa-linkedin-in border linkedin"></i>
+                <i class="fa-brands fa-github border github"></i>
+                <i class="fa-brands fa-facebook border facebook"></i>
+                <i class="fa-brands fa-youtube border youtube"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-end">
+        <p>Designed with   <i class="fa fa-heart pulse"></i> by <span>Milan Thapa</span></p>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- link java script here  -->
+
+    <script src="script.js"></script>
+    <script src="/Assets/JS/skills.js"></script>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+
+        var typed = new Typed('#element', {
+            strings: ['Grapihic Designer ', 'Mentor', 'Full-Stack Developer'],
+            typeSpeed: 50,
+            smartBackspace: true, // Default value
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
